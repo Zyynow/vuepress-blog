@@ -1,7 +1,7 @@
 module.exports = {
     title: 'My Blog',                // 网站的标题，它将会被用作所有页面标题的前缀，同时，默认主题下，它将显示在导航栏（navbar）上
     description: 'Just a Blog site', // 网站的描述，它将会以 <meta> 标签渲染到当前页面的 HTML 中
-    base: "/vuepress-blog/",         // 部署站点的基础路径，如果要部署到GitHub Pages，必须设置它为GitHub仓库名
+    base: "/vuepress-blog/",         // 部署站点的基础路径，如果要部署到GitHub Pages，必须设置它为 GitHub 仓库名
     themeConfig: {
       nav: [    // 添加导航栏
         { text: 'Home', link: '/' },
