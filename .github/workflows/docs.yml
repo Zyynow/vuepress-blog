@@ -13,10 +13,10 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-node@v3
-              with:
-				# 选择要使用的 node 版本
-                  node-version: 16
-                  cache: npm
+              with: 
+                # 选择要使用的 node 版本
+                node-version: 16
+                cache: npm
             - run: npm install
 
             - name: Build
@@ -24,11 +24,10 @@ jobs:
 
             - name: Deploy to GitHub Pages
               uses: crazy-max/ghaction-github-pages@v2
-              with:
-				# 部署到 gh-pages 分支
-                  target_branch: gh-pages
-				# 部署目录为 VuePress 的默认输出目录
-                  build_dir: docs/.vuepress/dist
-              env:
-				# BLOG_TOKEN 替换为你自定义的secrets name
-                  GITHUB_TOKEN: ${{ secrets.BLOG_TOKEN }}
+              with: 
+                # 部署到 gh-pages 分支
+                target_branch: gh-pages # 部署目录为 VuePress 的默认输出目录
+                build_dir: docs/.vuepress/dist
+              env: 
+                # BLOG_TOKEN 替换为你自定义的secrets name
+                GITHUB_TOKEN: ${{ secrets.BLOG_TOKEN }}
