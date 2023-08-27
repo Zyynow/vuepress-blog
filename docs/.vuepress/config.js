@@ -12,6 +12,7 @@ module.exports = {
             ariaLabel: 'Language Menu',
             items: [
               { text: 'Chinese', link: '/language/chinese/' },
+              { text: 'English', link: '/language/english/' },
               { text: 'Japanese', link: '/language/japanese/' }
             ]
           }
